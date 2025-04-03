@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-container">
+        <h1>Your DNA Analysis Results</h1>
+        <div class="results-table">
+            {% for table in tables %}
+                {{ table|safe }}
+            {% endfor %}
+        </div>
+        <a href="{{ url_for('treatment', filename=filename) }}" class="treatment-btn">View Treatment Recommendations</a>
+        <a href="{{ url_for('chatbot', filename=filename) }}" class="chatbot-btn">Ask Questions About Results</a>
+        <a href="{{ url_for('index') }}" class="back-btn">Back to Home</a>
+    </div>
+{% endblock %}

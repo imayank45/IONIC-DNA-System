@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-container">
+        <h1>Analyzing DNA...</h1>
+        <p>Processing your genetic data. Please wait...</p>
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.href = "templates/results.html";
+        }, 5000); // Simulate processing time
+    </script>
+{% endblock %}

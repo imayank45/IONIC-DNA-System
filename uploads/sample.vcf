@@ -1,0 +1,9 @@
+##fileformat=VCFv4.2
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene associated with the variant">
+##INFO=<ID=DRUG,Number=1,Type=String,Description="Drug(s) associated with the variant">
+##INFO=<ID=PHENOTYPE,Number=1,Type=String,Description="Phenotype Category">
+##INFO=<ID=SIGNIFICANCE,Number=1,Type=String,Description="Clinical significance">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+.	.	rs1801133	.	.	.	.	GENE=MTHFR;DRUG=methotrexate;PHENOTYPE=Drug_Response;SIGNIFICANCE=yes
+.	.	rs2066853	.	.	.	.	GENE=AHR;DRUG=warfarin;PHENOTYPE=Drug_Metabolism;SIGNIFICANCE=yes
+.	.	rs2231142	.	.	.	.	GENE=ABCG2;DRUG=allopurinol;PHENOTYPE=Drug_Response;SIGNIFICANCE=yes

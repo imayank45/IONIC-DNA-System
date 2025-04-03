@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-container">
+        <h1>Ask Questions About Your DNA Results</h1>
+        <div class="chatbot-container">
+            <p><strong>Context (Summaries):</strong> {{ context }}</p>
+            <form method="POST" action="{{ url_for('chatbot', filename=filename) }}">
+                <label for="question">Ask a question about the summaries:</label>
+                <input type="text" id="question" name="question" placeholder="e.g., What does rs1801133 affect?" required>
+                <button type="submit">Ask</button>
+            </form>
+            {% if question %}
+                <div class="chatbot-response">
+                    <p><strong>Question:</strong> {{ question }}</p>
+                    <p><strong>Answer:</strong> {{ answer }}</p>
+                </div>
+            {% endif %}
+        </div>
+        <a href="{{ url_for('results', filename=filename) }}" class="back-btn">Back to Results</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-container">
+        <h1>Personalized Treatment Recommendations</h1>
+        <p class="disclaimer">Disclaimer: These recommendations are for educational purposes only and should not be used as medical advice. Please consult a healthcare professional before making any treatment decisions.</p>
+        <div class="treatment-table">
+            {% for table in tables %}
+                {{ table|safe }}
+            {% endfor %}
+        </div>
+        <a href="{{ url_for('results', filename=filename) }}" class="back-btn">Back to Results</a>
+    </div>
+{% endblock %}

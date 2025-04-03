@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-container">
+        <h1>IONIC DNA System : Advanced DNA Analysis System for Precision Medicine</h1>
+        <form method="POST" action="{{ url_for('analyze') }}" enctype="multipart/form-data">
+            <input type="file" id="file" name="file" accept=".vcf">
+            <button type="submit">Upload DNA File</button>
+        </form>
+    </div>
+{% endblock %}
