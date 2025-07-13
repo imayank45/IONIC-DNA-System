@@ -1,8 +1,3 @@
-Here's your project information formatted in a professional and clean `README.md` file format. You can directly copy and paste this into your GitHub repository:
-
----
-
-````markdown
 # 🚀 IONIC DNA System: Personalized Pharmacogenomic Analysis
 
 ## 🌟 Overview
