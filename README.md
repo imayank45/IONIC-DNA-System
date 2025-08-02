@@ -18,7 +18,7 @@ This project demonstrates strengths in bioinformatics, natural language processi
 - 📄 **PDF Report Generation**: Creates downloadable summary reports.
 - 🎨 **Sci-Fi UI**: Futuristic design with DNA helix video background.
 
----
+--- 
 
 ## 📦 Installation
 
